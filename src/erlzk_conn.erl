@@ -336,7 +336,7 @@ handle_info(_Info, State=#state{ping_interval=PingIntv}) ->
 terminate(normal, #state{socket=Socket, heartbeat_watcher=HeartbeatWatcher}) ->
     stop_heartbeat(HeartbeatWatcher),
     close_connection(Socket),
-    error_logger:warning_msg("Server is closed~n"),
+    error_logger:info_msg("Server is closed~n"),
     ok;
 terminate(shutdown, #state{socket=Socket, heartbeat_watcher=HeartbeatWatcher}) ->
     stop_heartbeat(HeartbeatWatcher),
