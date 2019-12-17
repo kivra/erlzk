@@ -3,7 +3,7 @@
 **erlzk** is A Pure Erlang ZooKeeper Client (no C dependency).
 
 > NOTE: You should be familiar with Zookeeper and have read the
-[Zookeeper Programmers Guide](https://zookeeper.apache.org/doc/trunk/zookeeperProgrammers.html)
+[Zookeeper Programmers Guide](https://zookeeper.apache.org/doc/r3.5.6/zookeeperProgrammers.html)
 before using erlzk.
 
 > ATTENTION: ZooKeeper latest stable v3.4.6 removed create2 function,
